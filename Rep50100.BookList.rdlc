@@ -292,7 +292,11 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=not First(Fields!ShowPageCount.Value, "DataSet_Result")</Hidden>
+                  </Visibility>
+                </TablixMember>
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -583,6 +587,9 @@ End Function
       <Fields>
         <Field Name="COMPANYNAME">
           <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="ShowPageCount">
+          <DataField>ShowPageCount</DataField>
         </Field>
         <Field Name="No_Book">
           <DataField>No_Book</DataField>

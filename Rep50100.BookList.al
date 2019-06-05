@@ -13,6 +13,7 @@ report 50100 "BookList"
             DataItemTableView = sorting (Number) where (Number = const (1));
 
             column(COMPANYNAME; CompanyProperty.DisplayName()) { }
+            column(ShowPageCount; ShowPageCount) { }
         }
         dataitem(Book; Book)
         {
@@ -26,11 +27,37 @@ report 50100 "BookList"
         }
     }
 
+    requestpage
+    {
+        SaveValues = true;
+
+        layout
+        {
+            area(Content)
+            {
+                Group(General)
+                {
+                    Caption = 'Options';
+
+                    field(ShowPageCount; ShowPageCount)
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Show Page Count';
+
+                    }
+                }
+            }
+        }
+    }
+
     labels
     {
         TitleCaption = 'Book-List', Comment = 'Title shown in upper left corner of report';//, MaxLength = 25, Locked = true;
         PageCaption = 'Page {0} of {1}';
 
     }
+
+    var
+        ShowPageCount: Boolean;
 
 }
