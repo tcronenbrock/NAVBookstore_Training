@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "Docker Kiste",
+            "server": "http://BC",
+            "serverInstance": "NAV",
+            "authentication": "Windows",
+            "startupObjectId": 21,
+            "startupObjectType": "Page",
+            "breakOnError": true//,
+            //"schemaUpdateMode": "Recreate"
+        }
+    ]
+}
