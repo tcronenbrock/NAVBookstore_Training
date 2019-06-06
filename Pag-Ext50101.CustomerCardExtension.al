@@ -11,8 +11,6 @@ pageextension 50101 "CustomerCardExtension" extends "Customer Card"
                 SubPageLink = "No." = field ("Favorite Book No.");
             }
         }
-
-
         addlast(General)
         {
             field("Favorite Book"; "Favorite Book No.")
@@ -20,5 +18,6 @@ pageextension 50101 "CustomerCardExtension" extends "Customer Card"
                 ApplicationArea = All;
             }
         }
+
     }
 }
