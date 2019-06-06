@@ -376,7 +376,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=string.Format(Parameters!PageCount_BookCaption.Value,Globals!PageNumber,Globals!TotalPages)</Value>
+                      <Value>=string.Format(Parameters!PageCaption.Value,Globals!PageNumber,Globals!TotalPages)</Value>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
