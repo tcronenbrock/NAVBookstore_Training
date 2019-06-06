@@ -20,5 +20,6 @@
     "to": 50149
   },
   "runtime": "2.4",
-  "showMyCode": true
+  //"showMyCode": true
+  "features": ["TranslationFile"]
 }
